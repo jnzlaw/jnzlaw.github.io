@@ -1,0 +1,353 @@
+
+/* ==========================================================================
+Base styles:
+========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+
+}
+
+/* Fix for responsive images */
+
+body {
+  text-align: left;
+  background-image: url('../images/nature-2396309_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  font-family: "Proxima Nova W08 Reg", sans-serif;
+  font-style: italic;
+  Width: 100%;
+
+
+}
+
+Header {
+  padding-bottom: 1%;
+  padding-top: 1%;
+  vertical-align: bottom;
+  background-color: #EAFBFF;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+header h1 {
+  background-color: #Black;
+
+}
+
+#homeLink {
+  float: left;
+  font-size: 35px;
+}
+.navLink {
+  padding-right: 5%;
+
+}
+
+nav {
+  font: Open sans;
+  text-align: right;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: flex-end;
+
+}
+
+
+
+nav a{
+  color: Black;
+  text-decoration: none;
+
+}
+
+nav ul{
+  flex-direction: row;
+  list-style: none;
+  text-align: right;
+
+}
+
+li {
+  text-decoration: none;
+  display:inline-block;
+
+}
+
+
+#educationLink, #experienceLink, #skillsetLink, #contactLink {
+  transition:
+  height: 100px;
+
+}
+
+
+.Banner {
+  width: 1280px;
+  height: 713px;
+
+}
+
+#img1 {
+  display: none;
+
+}
+
+#img2 {
+  display: none;
+
+}
+#img3 {
+  display: none;
+
+}
+#img4 {
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.row  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 15%;
+  padding-top: 5%;
+  justify-content:space-around;
+
+}
+
+#GA {
+  order: 1;
+
+}
+
+#SRU{
+  order: 2;
+
+}
+
+
+
+.school {
+  padding-left: 10%;
+
+}
+
+#MIT{
+  padding-bottom: 10%;
+
+}
+
+
+
+.col-1-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 49%;
+
+}
+
+
+.col-sm-full-4{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 24%;
+  padding-bottom: 2%;
+
+
+}
+
+.gallery {
+  background-color: #EAFBFF;
+  width: 50%;
+  display: block;
+  margin: auto 0;
+  float: right;
+}
+
+
+
+img{
+
+  padding: 0% 0 0% 0;
+
+}
+
+
+
+.education h3 .education h4 .education p {
+  color: #FFFFFF;
+}
+
+#Education {
+  background-color: #77DDF9;
+  padding: 5% 0 10% 0;
+}
+
+#Experience {
+  padding: 5% 0 10% 0;
+  background-color: #FFA0A3;
+}
+
+#Skill {
+  background-color: #C1B8AC;
+  padding: 5% 0 10% 0;
+}
+
+#Contact {
+  background-color: #7F8FA3;
+  padding: 5% 0 10% 0;
+  width: 100%;
+}
+
+.experience p {
+  padding-bottom: 15px;
+
+}
+
+#Admin {
+  padding-left: : 5%;
+  align-items: center;
+  color: black;
+
+}
+
+.craft {
+  text-align: center;
+
+}
+
+h1{
+  color: black;
+  font-size: 2em;
+  margin: 0.67em 0;
+  text-align: left;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.83em 0;
+  color: black;
+
+}
+
+h3 {
+  font-size: 1.17em
+  margin: 1em 0;
+  color: black;
+}
+
+
+h4{
+  font-size: 1em 0;
+  color: black;
+}
+
+P {
+  font-size: 10px;
+  margin: 2em 0;
+  color: black;
+
+}
+
+
+footer {
+  background-color: #7F8FA3;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+}
+
+footer .wrap {
+  padding: 30px 15px;
+
+}
+
+footer input {
+  padding: 11px 10px;
+  height: 34px;
+  width: 20%;
+  border-color: Solid gray;
+
+  margin: 0 auto;
+  text-align: center;
+
+}
+.button{
+
+  height: 34px;
+  width: 10%;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+@@media screen and (max-width: 950px) {
+  .hamburger{
+    display:block;
+    text-align: center;
+  }
+  .main-nav {
+    float: none;
+    display: block;
+  }
+
+  .main-nav li {
+    float: none;
+    display: block;
+  }
+
+  #homeLink {
+    float: none;
+  }
+
+}
+
+@media screen and (max-width: 795px) {
+  .col-sm-full {
+    flex-basis: 100%
+  }
+  .hamburger{
+    display:block;
+    text-align: center;
+    position: relative;
+  }
+  .main-nav {
+    float: none;
+    display: block;
+  }
+
+  .main-nav li {
+    float: none;
+    display: block;
+    display:none;
+  }
+
+  #homeLink {
+    float: none;
+  }
+}
